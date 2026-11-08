@@ -1,0 +1,10 @@
+Django==5.2.19
+maxapi==1.2.4
+openai==3.46.0
+aiohttp==3.14.5
+Pillow==13.0.0
+pypdf==7.0.0
+python-dotenv==1.2.4
+waitress==3.0.2
+whitenoise==6.12.0
+tzdata==2026.6

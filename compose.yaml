@@ -1,0 +1,23 @@
+services:
+  web:
+    build: .
+    env_file: .env
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+  poller:
+    build: .
+    env_file: .env
+    command: python manage.py botpoller
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+  worker:
+    build: .
+    env_file: .env
+    command: python manage.py botworker
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

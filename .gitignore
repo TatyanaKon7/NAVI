@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+staticfiles/
+data/*
+!data/navi.sqlite3
+*.sqlite3-*
